@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Prenota-Leonardo Da Vinci</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header" style="background-image: url('img/bg-header.jpg');">
+            <img src="img/vitruviano.jfif">
+            <p>Museo Leonardo Da Vinci</p>
+
+        </div>
+        <div class="container">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <h1 id="title">Prenota il biglietto</h1>
+                <form name="Form" id="form">
+                    <table>
+                        <tr>
+                            <td>Nome</td>
+                            <td colspan="2"><input type="text" name="nome"></td>
+                        </tr>
+                        <tr>
+                            <td>Cognome</td>
+                            <td colspan="2"><input type="text" name="cognome"></td>
+                        </tr>
+                        <tr>
+                            <td>Sesso</td>
+                            <td colspan="2"><select name="sesso">
+                                    <option value="voce1">Maschile</option>
+                                    <option value="voce2">Femminile</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td colspan="2"><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Recapito telefonico</td>
+                            <td colspan="2"><input type="text" name="telefono"></td>
+                        </tr>
+                        <tr>
+                            <td>Città di residenza</td>
+                            <td colspan="2"><input type="text" name="città di residenza"></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>Tipologia di biglietto
+                                <select name="biglietto">
+                                    <option value="voce1">biglietto intero</option>
+                                    <option value="voce2">biglietto ridotto</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Quantità di biglietti (max 10) </p>
+                                <input type="number" max="10" min="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Data evento:</p>
+                                <input type="date">
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td>
+                                <p><b>Altre opzioni</b></p>
+                                <input type="checkbox" name="voce1"> autoguida (17.00€) <br>
+                                <input type="checkbox" name="voce2"> guardaroba (12.00€) <br>
+                                <input type="checkbox" name="voce3"> visione documentario (17.00€)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Ritiro biglietti</b></p>
+                                <input type="radio" name="biglietti"> presso biglietteria <br>
+                                <input type="radio" name="biglietti"> spedizione con corriere <br>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id="fintable">
+                        <tr>
+                            <td>commento:</td>
+                            <td><textarea id="testo" placeholder="lascia un commento" cols="35" rows="8"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit">invia</button>
+                                <button type="reset">cancella</button>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Sito web "ll museo di Leonardo" <br>
+                Esercizio di preparazione alla verifica</p>
+        </div>
+    </div>
+</body>
+
+</html>
